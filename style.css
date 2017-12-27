@@ -123,6 +123,8 @@ html {
 body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
+  padding-top: 3rem;
+	/* Move down content because we have a fixed navbar that is 3.5rem tall */
 }
 
 hr {
@@ -159,7 +161,42 @@ h1.site-title, p.site-title {
 }
 
 #masthead {
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
+}
+.brackground-gradient {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+/* Custom Button color */
+.btn-custom {
+  background-color: #dc78eb;
+  border-color: #dc78eb;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #d662e8;
+  border-color: #d04ce4;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #dc78eb;
+  border-color: #dc78eb;
+}
+
+.profile-pic {
+	border-radius: 100%;
 }
 
 ul, ol {
